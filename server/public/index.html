@@ -4,22 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="vendors/angular.min.js"></script>
-    <script src="vendors/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="vendors/angular.min.js"></script>
+    <script type="text/javascript" src="vendors/jquery-3.2.1.min.js"></script>
     <script src="scripts/client.js"></script>
    
     <title>Weekend 4</title>
 </head>
-<body ng-app="galleryApp">
-    <h1> Weekend 4</h1>
-    <div class="container">
-        <div id="galleryBox" ng-controler="GalleryController as gallery">
+<body ng-app="myApp">
+    <h1>is Angular Working {{4===4}}</h1>
+        <div ng-controller="GalleryController as gallery">
             is Angular Working {{4===4}}
-            <div ng-repeat="picture in gallery.pictures">
-                <img ng-src="assets/{{picture.name}}.jpg"/>
-                <p>{{picture.name}}</p>
-            </div>
+            <div ng-repeat="photo in gallery.pictures">
+            <img ng-src="assets/{{photo.name}}.jpg">
         </div>
-    </div>
 </body>
 </html>

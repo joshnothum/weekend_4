@@ -1,9 +1,10 @@
 console.log('js soruced');
 
-var galleryApp = angular.module('galleryApp', []);
+var myApp = angular.module('myApp', []);
 
-galleryApp.controller('GalleryController', function () {
+myApp.controller('GalleryController', function () {
     var gallery = this;
-    gallery.pictures = [{name: 'weird-family-photographs-18'}, {name: 'DSCF0020'}];
+    gallery.pictures = [{name:'shower'}, {name:'weird-family-photographs-18'}];
+    
     
 });
