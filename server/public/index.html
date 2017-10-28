@@ -13,10 +13,11 @@
 <body ng-app="galleryApp">
     <h1> Weekend 4</h1>
     <div class="container">
-        <div id="galleryBox" ng-controler="GalleryController as galleryControl">
+        <div id="galleryBox" ng-controler="GalleryController as gallery">
             is Angular Working {{4===4}}
-            <div>
-                <img ng-src="assets/weird-family-photographs-18.jpg"/>
+            <div ng-repeat="picture in gallery.pictures">
+                <img ng-src="assets/{{picture.name}}.jpg"/>
+                <p>{{picture.name}}</p>
             </div>
         </div>
     </div>

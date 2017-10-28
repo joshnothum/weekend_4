@@ -2,9 +2,8 @@ console.log('js soruced');
 
 var galleryApp = angular.module('galleryApp', []);
 
-galleryApp.controller('GalleryController', function ($http) {
+galleryApp.controller('GalleryController', function () {
     var gallery = this;
-    var galleryOfWeirdos = [];
+    gallery.pictures = [{name: 'weird-family-photographs-18'}, {name: 'DSCF0020'}];
     
-
 });
