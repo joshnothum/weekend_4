@@ -20,6 +20,10 @@ myApp.controller('GalleryController', function () {
         name: 'bender',
         description:'An old junkyard owner made this',
         count: 0,
+    },{
+        name: 'bcwb_opt',
+        description:'I took this yesterday',
+        count:0,
     }];
     gallery.addButton = function (photo) {
         console.log();
