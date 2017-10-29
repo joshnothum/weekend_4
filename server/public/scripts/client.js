@@ -10,13 +10,15 @@ myApp.controller('GalleryController', function () {
         count: 0
     }, {
         name: 'manuel',
-        description: '',
+        description: 'A Dominican man and his accordion',
         count: 0
     }, {
         name: 'new_bpf',
-        count: 0
+        description: 'after a couple years of harrassment, I finally got a picture with favorite band of mine',
+        count: 0,
     }, {
         name: 'bender',
+        description:'An old junkyard owner made this',
         count: 0,
     }];
     gallery.addButton = function (photo) {
