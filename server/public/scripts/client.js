@@ -24,6 +24,11 @@ myApp.controller('GalleryController', function () {
         name: 'bcwb_opt',
         description:'I took this yesterday',
         count:0,
+    },
+    {
+        name: 'jaxon_football',
+        description:'my nephew taking backyard routes seriously',
+        count: 0,
     }];
     gallery.addButton = function (photo) {
         console.log();
