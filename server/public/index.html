@@ -16,8 +16,8 @@
 <body ng-app="myApp">
     <h1>So it goes...</h1>
     <div ng-controller="GalleryController as gallery">
-        <div ng-repeat="photo in gallery.pictures" class="imgGallery">
-                <div class="galleryCard">
+        <div ng-repeat="photo in gallery.pictures" class="imgGallery" ng-click="gallery.flipCard(photo)">
+            <div class="galleryCard" ng-class="{flip: photo.flipped}">
                     <div class ="front plate">
                         <img ng-src="assets/{{photo.name}}.jpg" class="img-responsive thumbnail">
                     </div>

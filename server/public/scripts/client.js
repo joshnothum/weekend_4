@@ -22,6 +22,9 @@ myApp.controller('GalleryController', function ($http) {
 
     gallery.refreshGallery();
     
+    gallery.flipCard = function (photo) {
+        photo.flipped = !photo.flipped;
+    };
 });
 
 /*     gallery.pictures = [{name: 'shower',description: 'Se fue el agua',count: 0}, {name: 'manuel',description: 'A Dominican man and his accordion',count: 0}, {name: 'new_bpf',

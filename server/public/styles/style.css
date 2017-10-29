@@ -18,7 +18,7 @@ body{
     transition: all 1.0s linear;
 }
 
-.imgGallery:hover .galleryCard {
+.flip {
     transform: rotateY(180deg);
 }
 
