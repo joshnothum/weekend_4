@@ -13,22 +13,17 @@
    
     <title>Weekend 4</title>
 </head>
-<body ng-app="myApp">
+<body ng-app="myApp" class="container-fluid">
     <h1>So it goes...</h1>
-<div ng-controller="GalleryController as gallery" class="container-fluid" id="container">
-        <div ng-repeat="photo in gallery.pictures" class="imgGallery">
-<div class="buttonHolder">
-    <button type="button" class="btn btn-default btn-sm" ng-click="gallery.addButton()">
-        <span class="glyphicon glyphicon-heart">{{gallery.count}}</span>
-    </button>
-</div>
+    <div ng-controller="GalleryController as gallery">
+        <div ng-repeat="photo in gallery.pictures" class="imgGallery center-block">
                 <div class="galleryCard">
                     <div class ="front plate">
             <img ng-src="assets/{{photo.name}}.jpg" class="img-responsive thumbnail">
-                </div>
-                <div class = "back plate">
-                    <p>{{photo.description}}</p>
-                </div>
+                    </div>
+                    <div class = "back plate">
+                        <p>{{photo.description}}</p>
+                    </div>
                 </div>
             </div>
         </div>
