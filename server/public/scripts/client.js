@@ -21,9 +21,10 @@ myApp.controller('GalleryController', function ($http) {
     };
 
     gallery.refreshGallery();
-    
+
     gallery.flipCard = function (photo) {
         photo.flipped = !photo.flipped;
+        photo.view += 1;
     };
 });
 

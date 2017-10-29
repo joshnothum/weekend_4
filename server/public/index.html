@@ -8,6 +8,7 @@
     <script type="text/javascript" src="vendors/jquery-3.2.1.min.js"></script>
     <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap-theme.css">
+    <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive" rel="stylesheet">   
     <link href="styles/style.css" rel="stylesheet">
     <script src="scripts/client.js"></script>
    
@@ -26,6 +27,7 @@
                     </div>
                 </div>
                 <button ng-click="gallery.addButton(photo)" class="btn btn-sm glyphicon glyphicon-sunglasses pressButton">{{photo.count}}</button>
+                <span class="viewCounter">Views:{{photo.view}}</span>
             </div>
         </div>
 </body>

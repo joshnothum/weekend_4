@@ -2,11 +2,15 @@ body{
     background: linear-gradient(to right,lightblue, whitesmoke);
 }
 
+h1{
+font-family: 'Cedarville Cursive', cursive;
+}
+
 .imgGallery {
     position: relative;
     margin: 15px;
     width: 405px;
-    height: 300px;
+    height: 310px;
     float: left;
 }
 
@@ -16,6 +20,7 @@ body{
     height: 100%;
     transform-style: preserve-3d;
     transition: all 1.0s linear;
+    
 }
 
 .flip {
@@ -35,7 +40,7 @@ body{
     box-sizing: border-box;
     padding: 10px;
     color: white;
-    background-color: #aaa;
+    background: linear-gradient(to left, skyblue, rgb(65, 0, 65));
     
 }
 
@@ -51,3 +56,7 @@ body{
     position: absolute;
     z-index: 10;
 }
+
+.viewCounter{
+    font-family: 'Cedarville Cursive', cursive;
+};
