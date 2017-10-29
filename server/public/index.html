@@ -14,11 +14,17 @@
     <title>Weekend 4</title>
 </head>
 <body ng-app="myApp">
-    <h1>is Angular Working {{4===4}}</h1>
+    <div class = "container-fluid">
+        <h1>Mediocre White guy {{4===4}}</h1>
         <div ng-controller="GalleryController as gallery">
             is Angular Working {{4===4}}
             <div ng-repeat="photo in gallery.pictures">
-            <img ng-src="assets/{{photo.name}}.jpg">
+            <img ng-src="assets/{{photo.name}}.jpg" class="img-responsive galleryImg thumbnail">
+                <div class="buttonHolder">
+                    <button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span></button>
+                </div>
+            </div>
         </div>
+    </div>
 </body>
 </html>

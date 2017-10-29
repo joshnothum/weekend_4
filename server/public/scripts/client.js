@@ -4,7 +4,7 @@ var myApp = angular.module('myApp', []);
 
 myApp.controller('GalleryController', function () {
     var gallery = this;
-    gallery.pictures = [{name:'shower'}, {name:'weird-family-photographs-18'}];
+    gallery.pictures = [{name:'shower'}, {name:'manuel'}, {name: 'new_bpg'}];
     
     
 });
