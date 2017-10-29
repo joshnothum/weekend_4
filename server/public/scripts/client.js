@@ -24,7 +24,9 @@ myApp.controller('GalleryController', function ($http) {
 
     gallery.flipCard = function (photo) {
         photo.flipped = !photo.flipped;
-        photo.view += 1;
+        if(photo.flipped === true){
+            photo.view += 1;
+        }
     };
 });
 

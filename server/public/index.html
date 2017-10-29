@@ -15,20 +15,27 @@
     <title>Weekend 4</title>
 </head>
 <body ng-app="myApp">
+    <div class="jumbotron">
     <h1>So it goes...</h1>
+    </div>
     <div ng-controller="GalleryController as gallery">
         <div ng-repeat="photo in gallery.pictures" class="imgGallery" ng-click="gallery.flipCard(photo)">
             <div class="galleryCard" ng-class="{flip: photo.flipped}">
                     <div class ="front plate">
-                        <img ng-src="assets/{{photo.name}}.jpg" class="img-responsive thumbnail">
+                        <img ng-src="assets/{{photo.name}}.jpg" class="img img-responsive thumbnail">
                     </div>
                     <div class = "back plate">
                         <p>{{photo.description}}</p>
                     </div>
                 </div>
-                <button ng-click="gallery.addButton(photo)" class="btn btn-sm glyphicon glyphicon-sunglasses pressButton">{{photo.count}}</button>
+                <button ng-click="gallery.addButton(photo)" class="btn btn-sm glyphicon glyphicon-heart-empty pressButton">{{photo.count}}</button>
                 <span class="viewCounter">Views:{{photo.view}}</span>
             </div>
         </div>
 </body>
+<footer>
+Artisan Dongle Productions
+<br>
+A Team Dongle Subsidiary
+</footer>
 </html>

@@ -1,5 +1,6 @@
 body{
     background: linear-gradient(to right,lightblue, whitesmoke);
+    height: 90%;
 }
 
 h1{
@@ -60,3 +61,4 @@ font-family: 'Cedarville Cursive', cursive;
 .viewCounter{
     font-family: 'Cedarville Cursive', cursive;
 };
+
