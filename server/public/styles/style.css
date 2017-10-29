@@ -8,14 +8,13 @@ body{
 
 .buttonHolder{
     float: left;
+    position: absolute;
 }
 
 .galleryHolder {
-    align-content: center;
-    position: relative;
     margin: 10px auto;
-    width: 450px;
-    height: 300px;
+    width: 300px;
+    height: 200px;
     z-index: 1;
     perspective: 1000;
     float: left;
