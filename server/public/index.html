@@ -17,6 +17,7 @@
     <h1>So it goes...</h1>
     <div ng-controller="GalleryController as gallery">
         <div ng-repeat="photo in gallery.pictures" class="imgGallery center-block">
+                <button ng-click="gallery.addButton(photo)" class=".btn-sm">{{photo.count}}</button>
                 <div class="galleryCard">
                     <div class ="front plate">
             <img ng-src="assets/{{photo.name}}.jpg" class="img-responsive thumbnail">

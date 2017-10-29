@@ -2,10 +2,6 @@ body{
     background: linear-gradient(to right,lightblue, whitesmoke);
 }
 
-#container{
-    
-}
-
 .imgGallery {
     position: relative;
     margin-top: 10px;
