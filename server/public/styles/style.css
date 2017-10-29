@@ -13,9 +13,6 @@ body{
     float: left;
 }
 
-.imgGallery{
-    perspective: 1000;
-}
 
 .galleryCard {
     width: 100%;
